@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Web Page with Background Image</title>
+    <title>IROS2024 BT</title>
     <style>
         body {
             /* Add the background image */
@@ -31,7 +31,14 @@
             text-align: center;
             /* Centers the text horizontally */
             color: white;
-            font-size: 3em;
+            font-size: 2em;
+        }
+
+        h3 {
+            text-align: center;
+            /* Centers the text horizontally */
+            color: white;
+            font-size: 1em;
         }
 
         img,
@@ -46,9 +53,37 @@
             /* Maintains aspect ratio */
         }
 
+        /* Fixed width paragraph style */
+        .fixed-width {
+            width: 600px;
+            /* Set fixed width */
+            margin: 20px auto;
+            /* Center the paragraph with top/bottom margin */
+            text-align: justify;
+            /* Aligns text to the left for readability */
+            padding: 10px;
+            /* Optional: adds some padding around the text */
+            background-color: rgba(0, 0, 0, 0.5);
+            /* Optional: adds a semi-transparent background for contrast */
+            border-radius: 5px;
+            /* Optional: rounds the corners */
+            color: azure;
+        }
+
+        /* Style for authors line */
+        .authors {
+            margin-top: 20px;
+            /* Space above the authors line */
+            font-size: 0.9em;
+            /* Smaller font size */
+            color: lightgray;
+            /* Lighter color for the authors line */
+            text-align: center;
+        }
+
         /* Example content to scroll the page */
         section {
-            height: 500vh;
+            height: 100vh;
             /* Increase the height to make the page scrollable */
             padding: 20px;
             color: white;
@@ -58,9 +93,19 @@
 
 <body>
     <h1>Reinforcement Learning Based Control <br> for Robotic Flexible Element Disassembly</h1>
-    
 
+    <p class="authors">Benjamin Tapia Sal Paz, Gorka Sorrosal, Aitziber Mancisidor</p>
 
+    <!-- Fixed Width Paragraph -->
+    <p class="fixed-width">
+        This work investigates the application of Reinforcement Learning (RL) algorithms to enhance the adaptability and
+        performance of robotic disassembly processes involving flexible elements. The RL-based control strategy is
+        designed to execute Cartesian displacement actions on the robot's end effector, enabling precise manipulation.
+        By developing an adaptive reward function, the system achieves generalization and robustness by effectively
+        responding to changes in the elasticity of different components. This approach allows the robot to demonstrate a
+        comprehensive understanding of disassembly tasks, adapting to different flexible elements and achieving
+        successful extraction through low-force trajectories.
+    </p>
 
     <img src="graphical_abstract.png" alt="A description of the image" width="600">
     <h2>Simulated Demo:</h2>
